@@ -1,0 +1,17 @@
+def task_5():
+    sailor = {}
+    team_1 = []
+    team_2 = []
+    value = int(input("Введите количество матросов: "))
+    while len(sailor) + 1 <= value:
+        username = input("Введите фамилию :")
+        age = int(input("Введите возраст: "))
+        sailor[username] = age
+    for i in sailor:
+        if (sailor[i] > 20) and (sailor[i] < 40):
+            team_2 += [i]
+        else:
+            team_1 += [i]
+    print("Команда 1: ", sorted(team_1))
+    print("Команда 2: ", sorted(team_2))
+task_5()
