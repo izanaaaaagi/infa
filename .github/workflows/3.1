@@ -1,0 +1,31 @@
+def task_1():
+    foot_dict = {
+    'Россия': 'A',
+    'Португалия': 'B',
+    'Франция': 'C',
+    'Дания': 'C',
+    'Египет': 'A'
+    }
+    foot_dict["Турция"] = "B"
+
+    w = input()
+    for k, v in foot_dict.items():
+        if v == w:
+            print(k)
+
+    t_a = 0
+    t_b = 0
+    t_c = 0
+    for k, v in foot_dict.items():
+        if v == "A":
+            t_a += 1
+
+        if v == "B":
+            t_b += 1
+
+        if v == "C":
+            t_c += 1
+
+    print("A - ", t_a)
+    print("B - ", t_b)
+    print("C - ", t_c)
